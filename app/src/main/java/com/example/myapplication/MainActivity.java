@@ -85,6 +85,20 @@ public class MainActivity extends AppCompatActivity {
         displayGoalForTeamA(ballScoreTeamA);
     }
 
+    public void subtractDeadTeamA (View v) {
+        int i = deadScoreTeamA--;
+        if (deadScoreTeamA<=0)
+            deadScoreTeamA=0;
+        displayYellowForTeamA(deadScoreTeamA);
+    }
+
+    public void subtractDeadTeamB (View v) {
+        int i = deadScoreTeamB--;
+        if (deadScoreTeamB <= 0)
+            deadScoreTeamB = 0;
+        displayYellowForTeamB(deadScoreTeamB);
+    }
+
     public void subtractBallForTeamB (View v) {
         int i = ballScoreTeamB--;
         if (ballScoreTeamB<=0)

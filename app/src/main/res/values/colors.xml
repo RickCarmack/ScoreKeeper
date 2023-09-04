@@ -6,6 +6,7 @@
 
     <color name="myRedColor">#dd4b39</color>
     <color name="myBlueColor">#0073b7</color>
-    <color name="myYellowColor">#000000</color>
+    <color name="myBlackColor">#000000</color>
     <color name="myGreenColor">#017641</color>
+    <color name="myYellowColor">#f39c12</color>
 </resources>

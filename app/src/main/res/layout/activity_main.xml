@@ -50,8 +50,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/SmallScore"
-                        android:background="@color/myYellowColor"
-                        android:text="0" />
+                        android:background="@color/myBlackColor"
+                        android:text="0"
+                        android:onClick="addYellowForTeamA"/>
 
                 </LinearLayout>
 
@@ -69,14 +70,6 @@
 
             </RelativeLayout>
 
-
-            <Button
-                style="@style/Buttons"
-                android:background="@color/myGreenColor"
-                android:onClick="addGoalForTeamA"
-                android:text="@string/ball"
-                android:textSize="18sp" />
-
             <Button
                 style="@style/Buttons"
                 android:background="@color/myRedColor"
@@ -85,9 +78,11 @@
 
             <Button
                 style="@style/Buttons"
-                android:background="@color/myYellowColor"
-                android:onClick="addYellowForTeamA"
-                android:text="@string/dead_ball" />
+                android:background="@color/myBlackColor"
+                android:onClick="subtractDeadTeamA"
+                android:text="@string/subtract"
+                android:textSize="18sp"
+                android:textColor="@color/myRedColor"/>
 
         </LinearLayout>
 
@@ -133,8 +128,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/SmallScore"
-                        android:background="@color/myYellowColor"
-                        android:text="0" />
+                        android:background="@color/myBlackColor"
+                        android:text="0"
+                        android:onClick="addYellowForTeamB"/>
 
                 </LinearLayout>
 
@@ -154,22 +150,18 @@
 
             <Button
                 style="@style/Buttons"
-                android:background="@color/myGreenColor"
-                android:onClick="addBallForPlayerB"
-                android:text="@string/ball"
-                android:textSize="18sp" />
-
-            <Button
-                style="@style/Buttons"
                 android:background="@color/myRedColor"
                 android:onClick="subtractBallForTeamB"
                 android:text="@string/subtract" />
 
+
             <Button
                 style="@style/Buttons"
-                android:background="@color/myYellowColor"
-                android:onClick="addYellowForTeamB"
-                android:text="@string/dead_ball" />
+                android:background="@color/myBlackColor"
+                android:onClick="subtractDeadTeamB"
+                android:text="@string/subtract"
+                android:textColor="@color/myRedColor"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -177,7 +169,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="203dp"
         android:layout_alignParentBottom="true"
         android:scaleType="centerCrop"
         android:src="@drawable/nine_ball" />
