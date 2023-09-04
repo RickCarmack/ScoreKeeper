@@ -47,6 +47,8 @@
 
                     <TextView
                         android:id="@+id/team_a_dead_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         style="@style/SmallScore"
                         android:background="@color/myYellowColor"
                         android:text="0" />
@@ -62,7 +64,8 @@
                     android:paddingBottom="8dp"
                     android:text="0"
                     android:textColor="#000000"
-                    android:textSize="128dp" />
+                    android:textSize="128dp"
+                    android:onClick="addGoalForTeamA"/>
 
             </RelativeLayout>
 
@@ -127,6 +130,8 @@
 
                     <TextView
                         android:id="@+id/team_b_dead_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         style="@style/SmallScore"
                         android:background="@color/myYellowColor"
                         android:text="0" />
@@ -142,7 +147,8 @@
                     android:paddingBottom="8dp"
                     android:text="0"
                     android:textColor="#000000"
-                    android:textSize="128dp" />
+                    android:textSize="128dp"
+                    android:onClick="addBallForPlayerB"/>
 
             </RelativeLayout>
 
