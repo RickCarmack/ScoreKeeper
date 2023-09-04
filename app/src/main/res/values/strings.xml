@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nine Ball Score Keeper</string>
+    <string name="team_a">Amy</string>
+    <string name="team_b">Rick</string>
+    <string name="goal">Ball Made</string>
+    <string name="dead_ball">Dead Ball</string>
+    <string name="scratch">Scratch</string>
+</resources>
