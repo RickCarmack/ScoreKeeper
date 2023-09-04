@@ -27,10 +27,10 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="@string/team_a"
+                android:text="@string/player_a"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="40sp" />
+                android:textSize="32sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -50,12 +50,6 @@
                         android:background="@color/myYellowColor"
                         android:text="0" />
 
-                    <TextView
-                        android:id="@+id/team_a_scratch_score"
-                        style="@style/SmallScore"
-                        android:background="@color/myRedColor"
-                        android:text="0" />
-
                 </LinearLayout>
 
                 <TextView
@@ -71,24 +65,26 @@
 
             </RelativeLayout>
 
+
+            <Button
+                style="@style/Buttons"
+                android:background="@color/myGreenColor"
+                android:onClick="addGoalForTeamA"
+                android:text="@string/ball"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Buttons"
+                android:background="@color/myRedColor"
+                android:onClick="subtractBallForTeamA"
+                android:text="@string/subtract" />
+
             <Button
                 style="@style/Buttons"
                 android:background="@color/myYellowColor"
                 android:onClick="addYellowForTeamA"
                 android:text="@string/dead_ball" />
 
-            <Button
-                style="@style/Buttons"
-                android:background="@color/myRedColor"
-                android:onClick="addRedForTeamA"
-                android:text="@string/scratch" />
-
-            <Button
-                style="@style/Buttons"
-                android:background="@color/myGreenColor"
-                android:onClick="addGoalForTeamA"
-                android:text="@string/goal"
-                android:textSize="18sp" />
         </LinearLayout>
 
         <View
@@ -109,10 +105,10 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="@string/team_b"
+                android:text="@string/player_b"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="40sp" />
+                android:textSize="32sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -132,12 +128,6 @@
                         android:background="@color/myYellowColor"
                         android:text="0" />
 
-                    <TextView
-                        android:id="@+id/team_b_scratch_score"
-                        style="@style/SmallScore"
-                        android:background="@color/myRedColor"
-                        android:text="0" />
-
                 </LinearLayout>
 
                 <TextView
@@ -155,22 +145,22 @@
 
             <Button
                 style="@style/Buttons"
-                android:background="@color/myYellowColor"
-                android:onClick="addYellowForTeamB"
-                android:text="@string/dead_ball" />
+                android:background="@color/myGreenColor"
+                android:onClick="addBallForPlayerB"
+                android:text="@string/ball"
+                android:textSize="18sp" />
 
             <Button
                 style="@style/Buttons"
                 android:background="@color/myRedColor"
-                android:onClick="addRedForTeamB"
-                android:text="@string/scratch" />
+                android:onClick="subtractBallForTeamB"
+                android:text="@string/subtract" />
 
             <Button
                 style="@style/Buttons"
-                android:background="@color/myGreenColor"
-                android:onClick="addGoalForTeamB"
-                android:text="@string/goal"
-                android:textSize="18sp" />
+                android:background="@color/myYellowColor"
+                android:onClick="addYellowForTeamB"
+                android:text="@string/dead_ball" />
 
         </LinearLayout>
 

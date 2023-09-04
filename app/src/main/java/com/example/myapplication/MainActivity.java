@@ -33,11 +33,6 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    public void displayRedForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_scratch_score);
-        scoreView.setText(String.valueOf(score));
-    }
-
     public void displayYellowForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_dead_score);
         scoreView.setText(String.valueOf(score));
@@ -49,11 +44,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayGoalForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_ball_score);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    public void displayRedForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_scratch_score);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -74,11 +64,9 @@ public class MainActivity extends AppCompatActivity {
         deadScoreTeamB = 0;
 
         displayGoalForTeamA(ballScoreTeamA);
-        displayRedForTeamA(scratchScoreTeamA);
         displayYellowForTeamA(deadScoreTeamA);
 
         displayGoalForTeamB(ballScoreTeamB);
-        displayRedForTeamB(scratchScoreTeamB);
         displayYellowForTeamB(deadScoreTeamB);
 
     }
@@ -90,9 +78,14 @@ public class MainActivity extends AppCompatActivity {
         displayGoalForTeamA(ballScoreTeamA);
     }
 
-    public void addRedForTeamA (View v) {
-        scratchScoreTeamA++;
-        displayRedForTeamA(scratchScoreTeamA);
+    public void subtractBallForTeamA (View v) {
+        int i = ballScoreTeamA--;
+        displayGoalForTeamA(ballScoreTeamA);
+    }
+
+    public void subtractBallForTeamB (View v) {
+        int i = ballScoreTeamB--;
+        displayGoalForTeamB(ballScoreTeamB);
     }
 
     public void addYellowForTeamA (View v) {
@@ -101,14 +94,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /* Increment Balls made, Scratches and dead balls team B*/
-    public void addGoalForTeamB (View v) {
+    public void addBallForPlayerB(View v) {
         ballScoreTeamB++;
         displayGoalForTeamB(ballScoreTeamB);
-    }
-
-    public void addRedForTeamB (View v) {
-        scratchScoreTeamB++;
-        displayRedForTeamB(scratchScoreTeamB);
     }
 
     public void addYellowForTeamB (View v) {
