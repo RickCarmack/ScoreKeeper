@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
         displayYellowForTeamB(deadScoreTeamB);
 
     }
-
 
     /* Increment Balls made, Scratches and dead balls for team A*/
     public void addGoalForTeamA (View v) {

@@ -21,14 +21,15 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
+            <EditText
+                android:id="@+id/player_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
                 android:text="@string/player_a"
-                android:textAllCaps="true"
+                android:textAllCaps="false"
                 android:textColor="#616161"
                 android:textSize="32sp" />
 
@@ -99,16 +100,18 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:padding="16dp"
-                android:text="@string/player_b"
-                android:textAllCaps="true"
-                android:textColor="#616161"
-                android:textSize="32sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="@string/player_b"
+                    android:textAllCaps="false"
+                    android:textColor="#616161"
+                    android:textSize="32sp"
+                    android:onClick="resetScore"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
