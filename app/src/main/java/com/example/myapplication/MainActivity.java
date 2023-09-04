@@ -80,11 +80,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void subtractBallForTeamA (View v) {
         int i = ballScoreTeamA--;
+        if (ballScoreTeamA<=0)
+            ballScoreTeamA=0;
         displayGoalForTeamA(ballScoreTeamA);
     }
 
     public void subtractBallForTeamB (View v) {
         int i = ballScoreTeamB--;
+        if (ballScoreTeamB<=0)
+            ballScoreTeamB=0;
         displayGoalForTeamB(ballScoreTeamB);
     }
 
